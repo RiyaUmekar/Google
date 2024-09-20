@@ -1,0 +1,135 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: "Montserrat", sans-serif;
+   color: black;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.shadow {
+   width: 100px;
+   height: 100px;
+   background: red;
+   box-shadow: -10px 0 10px 10px rgba(0, 0, 0, 1);
+   transition-duration: 1s;
+   transition-timing-function: ease;
+}
+.shadow:hover {
+   background: blue;
+}
+
+header {
+   width: 100%;
+   padding: 1rem 1.5rem;
+   font-size: 0.9rem;
+}
+header img {
+   border-radius: 100%;
+   width: 2.5rem;
+}
+footer {
+   width: 100%;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+nav {
+   display: flex;
+   justify-content: end;
+   align-items: center;
+   gap: 1.5rem;
+}
+
+main {
+   display: grid;
+   grid-template-columns: 1fr;
+   gap: 1rem;
+   text-align: center;
+   align-items: center;
+}
+
+main img {
+   margin: auto;
+   height: 5rem;
+}
+
+main ul {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 0.5rem 2rem;
+   list-style-type: none;
+}
+main input {
+   padding: 1rem;
+   border-radius: 50px;
+   border: 1px solid #ccc;
+   width: 500px;
+}
+main button {
+   display: inline-block;
+   padding: 0.8rem 1rem;
+   border: none;
+   text-transform: capitalize;
+   background: #f6f6f6;
+   cursor: pointer;
+   margin-inline: 0.5rem;
+   margin-top: 0.5rem;
+}
+main button:hover{
+   box-shadow:0px 0px 1px 1px rgba(0, 0, 0, 0.2) ;
+   background-color: #f8f9fa;
+   border: 1px solid #a8a998;
+   border-radius: 5px;
+}
+main ul {
+   color: blue;
+   text-decoration: underline;
+   margin-top: 2rem;
+   font-size: 0.8rem;
+}
+
+footer {
+   background: #f2f2f2;
+   font-size: 0.8rem;
+   color: #70757a;
+   font-weight: 500;
+}
+footer p {
+   padding: 1rem 2rem;
+}
+footer ul {
+   padding: 1rem 2rem;
+}
+footer hr {
+   height: 1px;
+   background: #ddd;
+   border: none;
+}
+.footer-nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.footer-nav ul {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 2rem;
+   flex-wrap: wrap;
+   list-style-type: none;
+}

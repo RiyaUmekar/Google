@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>File Dialog Example</title>
+  </head>
+  <body>
+    <input type="file" id="fileInput" style="display: none" />
+
+    <button onclick="openFileDialog()">Open File Dialog</button>
+
+    <script>
+      function openFileDialog() {
+        const fileInput = document.getElementById("fileInput");
+        fileInput.click();
+
+        fileInput.addEventListener("change", handleFileSelect);
+      }
+
+      function handleFileSelect(event) {
+        const selectedFile = event.target.files[0].mozFullPath;
+
+        console.log("Selected file:", selectedFile.value);
+        if (selectedFile) {
+          console.log("Selected file:", selectedFile);
+          // Do something with the selected file
+        }
+      }
+    </script>
+  </body>
+</html>
